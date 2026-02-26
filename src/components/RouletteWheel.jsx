@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 
 // Puedes modificar estos datos con los premios y colores que prefieras
 const defaultItems = [
-  { id: 1, text: '10%', color: '#FF5733' },
-  { id: 2, text: '20%', color: '#33FF57' },
-  { id: 3, text: 'Nada', color: '#3357FF' },
-  { id: 4, text: 'Sorpresa', color: '#FF33A8' },
-  { id: 5, text: '50%', color: '#F3FF33' },
-  { id: 6, text: 'Intenta de nuevo', color: '#33FFF5' },
+  { id: 1, text: '10%', color: '#ff6b6bff' },
+  { id: 2, text: '20%', color: '#98ff84ff' },
+  { id: 3, text: 'Nada', color: '#ffbd6cff' },
+  { id: 4, text: 'Sorpresa', color: '#7becf7ff' },
+  { id: 5, text: '50%', color: '#fbff81ff' },
+  { id: 6, text: 'Intenta de nuevo', color: '#9d8bffff' },
 ];
 
 export default function Roulette() {
   const [rotation, setRotation] = useState(0);
   const [isSpinning, setIsSpinning] = useState(false);
   const [winner, setWinner] = useState(null);
-
+  
   const spinWheel = () => {
     if (isSpinning) return;
     
@@ -71,7 +71,7 @@ export default function Roulette() {
           height: '0',
           borderLeft: '15px solid transparent',
           borderRight: '15px solid transparent',
-          borderTop: '30px solid #2C3E50', // Color de la flecha
+          borderTop: '30px solid #ff0000ff', // Color de la flecha
           zIndex: 10
         }}></div>
         

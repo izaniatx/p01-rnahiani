@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 export default function Inicio() {
     return (
         <MainLayout>
-            <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+            <div className="menu">
                     <h1 className="text-lg font-semibold">Mi App</h1>
                     <nav style={{ textAlign: "center", margin: "20px" }}>
                         <Link to="/" style={{ margin: "0 10px" }}>Inicio</Link>
